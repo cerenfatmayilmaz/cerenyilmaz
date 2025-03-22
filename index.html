@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit Web Sitesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            position: relative;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            position: relative;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .profile-pic {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .upload-section {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .upload-section input {
+            display: none;
+        }
+        .upload-section label {
+            background: #555;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hoş Geldiniz</h1>
+        <img src="profile.jpg" alt="Profil Fotoğrafı" class="profile-pic">
+        <div class="upload-section">
+            <label for="fileUpload">Ödev Yükle</label>
+            <input type="file" id="fileUpload">
+        </div>
+    </header>
+    <section>
+        <h2>Basit Web Sitesi</h2>
+        <p>Bu, HTML ve CSS kullanılarak oluşturulmuş basit bir web sitesidir.</p>
+    </section>
+    <footer>
+        &copy; 2025 Basit Web Sitesi
+    </footer>
+</body>
+</html>
